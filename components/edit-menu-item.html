@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit menu list</title>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header-root">
+      <div class="logoArea">
+        <h2 class="headerTxt">truYum</h2>
+        <img src="../images/truYum.png" class="logo" alt="truyum" />
+      </div>
+      <div class="menuArea">
+        <a href="menu-item-list-admin.html" id="adminMenu">Menu</a>
+      </div>
+    </header>
+    <div class="adminPannel">
+        <h2 class="title">Edit Menu Items</h2>
+	<div class="page-content1">
+	<form  name = "editMenuItem"  action = "edit-menu-item-status.html" onsubmit = "return validate()">
+	<label for="title">Name:</label><br><input class="text-box1" type="text" name="title" id="title"><br><br>
+	</div>
+	<div>
+		<table>
+			<tr>
+			<td><label for="price">Price(Rs.):</label><br><input class="text-box" type="text" name="price" id="price"></td>
+			<td>Active:<br><input type="radio" name="active" value="YES" id="yes"><label for="yes">YES</label>
+			<input type="radio" name="active" value="NO" id="no"><label for="no">NO</label></td>
+			<td><label for="dateOfLaunch">Date of Launch:</label><br><input class="text-box" type="date" name="dateOfLaunch" id="dateOfLaunch"></td>
+			<td>Category:<br><select>
+				<option class="dropdown" value="category">Main Course</option>
+				<option class="dropdown" value="category">Starters</option>
+				<option class="dropdown" value="category">Dessert</option>
+				<option class="dropdown" value="category">Drinks</option></select></td>
+			</tr>
+  
+		</table>
+	</div>
+	<div class="page-content2">
+		<br><br><input type="checkbox" name="freeDelivery" id="freedelivery"><label for="freedelivery">Free Delivery</label><br><br>
+		<input class="button" type="submit" value="SAVE">
+	</div>	
+	</form>
+    </div>
+    <footer class="truFooter">
+        <h1 class="copyright">Copyright © 2021</h1>
+      </footer>
+  </body>
+</html>

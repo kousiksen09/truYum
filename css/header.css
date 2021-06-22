@@ -1,0 +1,48 @@
+.header-root {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 12vh;
+  width: 100%;
+  background-color: rgba(12, 12, 49, 0.836);
+}
+
+.logoArea {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 40%;
+  padding-left: 22px;
+}
+.headerTxt {
+  position: relative;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  height: 80%;
+  margin-bottom: 2px;
+}
+.logo {
+  height: 80%;
+  width: 8vw;
+}
+
+.menuArea {
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 60%;
+  left: 40%;
+  top: 30%;
+}
+
+#adminMenu {
+  position: relative;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  padding-left: 2rem;
+}

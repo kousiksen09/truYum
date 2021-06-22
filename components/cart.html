@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header-root">
+      <div class="logoArea">
+        <h2 class="headerTxt">truYum</h2>
+        <img src="../images/truYum.png" class="logo" alt="truyum" />
+      </div>
+      <div class="menuArea">
+        <a href="menu-item-list-customer.html" id="adminMenu">Menu</a>
+        <a href="" id="adminMenu">Cart</a>
+      </div>
+    </header>
+    <div class="adminPannel">
+      <h2 class="title">Cart</h2>
+      <div class="sucess-message" id="delete"></div>
+      <table class="body-content-colour">
+        <tr>
+          <th>Name</th>
+          <th>Free Delivery</th>
+          <th class="currency" style="text-align: right">Price</th>
+        </tr>
+
+        <tr id="p1">
+          <td>Sandwich</td>
+          <td>Yes</td>
+          <td class="currency" style="text-align: right">Rs.99.00</td>
+          <td>
+            <button class="btn primary delete" onclick="deleteItem()">
+              Delete
+            </button>
+          </td>
+        </tr>
+
+        <tr id="p2">
+          <td>Burger</td>
+          <td>No</td>
+          <td class="currency" style="text-align: right">Rs.129.00</td>
+          <td>
+            <button class="btn primary delete" onclick="deleteItem()">
+              Delete
+            </button>
+          </td>
+        </tr>
+
+        <tr id="p3">
+          <td>Pizza</td>
+          <td>No</td>
+          <td class="currency" style="text-align: right">Rs.149.00</td>
+          <td>
+            <button class="btn primary delete" onclick="deleteItem()">
+              Delete
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>Total</td>
+          <td style="text-align: right" id="total">Rs.377.00</td>
+        </tr>
+      </table>
+    </div>
+    <footer class="truFooter">
+      <h1 class="copyright">Copyright © 2021</h1>
+    </footer>
+  </body>
+</html>
